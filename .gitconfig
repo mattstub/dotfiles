@@ -9,6 +9,7 @@
 	ci = commit
 	co = checkout
 	df = diff --word-diff
+	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"	# Switch to a branch, creating it if you need to
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lg = log -p
 	ll = log --pretty=oneline --graphc --abbrev-commit
@@ -21,6 +22,9 @@
 	st = status
 	stl = ls-files -m -o --exclude-standard
 	sts = status -sb
+
+	fb = "!f() { git branch -a --contains $1; }; f"		#Find branches containing commit
+	ft = "!f() { git describe --always --contains $1; }; f"		# Find tags containing commit
 
 [color]
 	ui = auto
@@ -46,3 +50,10 @@
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
+
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+
+[github]
+	user = mattstub
