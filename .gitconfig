@@ -1,0 +1,48 @@
+[user]
+	email = matt@mattstub.com
+	name = mattstub
+
+[alias]
+	br = branch
+	c = clone
+	ca = commit -am
+	ci = commit
+	co = checkout
+	df = diff --word-diff
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lg = log -p
+	ll = log --pretty=oneline --graphc --abbrev-commit
+	p = push
+	pf = push --force
+	po = push origin
+	pom = push origin master
+	pr = pull
+	pru = pull upstream master
+	st = status
+	stl = ls-files -m -o --exclude-standard
+	sts = status -sb
+
+[color]
+	ui = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
