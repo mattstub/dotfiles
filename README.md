@@ -30,3 +30,4 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 ## Sources
 [Webpro dotfiles](https://github.com/webpro/dotfiles)
+[Mathias Bynens dotfiles](https://github.com/mathiasbynens/dotfiles)

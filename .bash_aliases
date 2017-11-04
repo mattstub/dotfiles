@@ -1,9 +1,10 @@
 #  Generic Shortcuts  #
 #######################
 alias reload='source ~/.bashrc' && 'clear'
-alias _='sudo'
+alias s='sudo'
 alias g='git'
 alias rr='rm -rf'
+alias cls='clear'
 
 #  Navigation Shortcuts  #
 ##########################
@@ -11,6 +12,8 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias dev='cd $HOME/projects'
+alias doc='cd $HOME/Documents'
+alias down='cd $HOME/Downloads'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 
@@ -29,3 +32,11 @@ alias l="ls -lahA --color -G --time-style=long-iso --group-directories-first"
 alias ll="ls -lA --color -G"
 alias lt="ls -lhAtr --color -G --time-style=long-iso --group-directories-first"
 alias ld="ls -ld --color -G */"
+
+
+#  Functions  #
+###############
+mcd () {
+    mkdir -p $1
+    cd $1
+}
