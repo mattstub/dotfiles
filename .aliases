@@ -1,6 +1,6 @@
 #  Generic Shortcuts  #
 #######################
-alias reload='source ~/.bashrc' && 'clear'
+alias reload='source ~/.zshrc' && 'clear'
 alias s='sudo'
 alias g='git'
 alias rr='rm -rf'
