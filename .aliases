@@ -11,10 +11,8 @@ alias cls='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias dev='cd $HOME/projects'
 alias doc='cd $HOME/Documents'
 alias down='cd $HOME/Downloads'
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 
 #  NPM Shortcuts #
